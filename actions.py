@@ -62,7 +62,7 @@ class ItemAction(Action):
             self, entity: Actor, item: Item, target_xy: Optional[Tuple[int, int]] = None
     ):
         super().__init__(entity)
-        self.item = Item
+        self.item = item
         if not target_xy:
             target_xy = entity.x, entity.y
         self.target_xy = target_xy
